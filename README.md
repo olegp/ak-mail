@@ -15,6 +15,8 @@ Sending an email is as simple as:
       text: 'world'
     });
 
+To send HTML instead of plain text, replace the `text` attribute with `html`.
+
 The `server` and `key` parameters are available via your [Mailgun control panel](http://www.mailgun.com).
 
 To email multiple recipients, set `to` to be an array of Strings.

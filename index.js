@@ -57,8 +57,6 @@ exports.send = function(data) {
     headers: headers
   };
   
-  //return JSON.stringify(options);
-  
   var response = new HttpClient(options).finish();
   if(response.status != 201) {
     throw new Error(response.body); 
